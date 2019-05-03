@@ -18,3 +18,30 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/mongo', function () {
+    $videoList = Youtube::searchVideos('mongodb');
+    //print_r(json_decode($videoList));
+    $jsonData = json_encode($videoList);
+    print_r($jsonData);
+});
+
+Route::get('/express', function () {
+    $videoList = Youtube::searchVideos('expressjs');
+    $jsonData = json_encode($videoList);
+    print_r($jsonData);
+});
+
+Route::get('/react', function () {
+    $videoList = Youtube::searchVideos('reactjs');
+    $jsonData = json_encode($videoList);
+    print_r($jsonData);
+});
+
+Route::get('/node', function () {
+    $videoList = Youtube::searchVideos('nodejs');
+    $jsonData = json_encode($videoList);
+    print_r($jsonData);
+});
+
+
