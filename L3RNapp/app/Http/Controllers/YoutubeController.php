@@ -13,7 +13,7 @@ class YoutubeController extends Controller
      */
     public function index()
     {
-        //
+        return ('youtubes.index');
     }
 
     /**
