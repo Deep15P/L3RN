@@ -45,3 +45,4 @@ Route::get('/node', function () {
 });
 
 
+Route::resource('youtubes', 'YoutubeController');
