@@ -27,18 +27,33 @@
                   <!-- <li>E</li> -->
             </ul>
       </div>
+      <!-- nav bar -->
+      <nav class="nav">
+        <span class="logout">LOGOUT</span>
+      
       <!-- creating the logo -->
       <div class="logo">
             <span>L3RN</span>
       </div>
+
+      </nav>
       <div class="content">
             <!-- heading/username -->
             <div class="heading">
-                  <span>Search</span>
+                  <span>SEARCH PAGE</span>
             </div>
             <!-- status/description  -->
+            <!-- dropdown menu inside description -->
             <div class="desc">
-                  <p></p>
+                    <div class="dropdown">
+                            <button class="dropbtn">MERN STACK</button>
+                            <div class="dropdown-content">
+                            <a href="#">MongoDB</a>
+                            <a href="#">Express</a>
+                            <a href="#">Node.js</a>
+                            <a href="#">React.js</a>
+                            </div>
+                    </div>
             </div>
             <div class="link">
                   <!-- search button that redirects to the search page -->
@@ -54,7 +69,7 @@
             // // logo animation
             TweenMax.from(".logo", 1.6, {
                   // it takes two seconds for it to load in
-                  delay: 2.0,
+                  delay: 3.8,
                   // opacity is zero
                   opacity: 0,
                   // the animation will be moving on the y axis 
@@ -63,8 +78,21 @@
                   ease: Expo.easeInOut
             });
 
+            TweenMax.from(".logout", 1.6, {
+                  // it takes two seconds for it to load in
+                  delay: 3.8,
+                  // opacity is zero
+                  opacity: 0,
+                  // the animation will be moving on the y axis 
+                  y: 30,
+                  // the content will ease in and out
+                  ease: Expo.easeInOut
+            });
+
+
+
             TweenMax.from(".heading", 1.6, {
-                  delay: 3.6,
+                  delay: 3.8,
                   opacity: 0,
                   y: 30,
                   ease: Expo.easeInOut
