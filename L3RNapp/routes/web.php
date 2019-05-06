@@ -20,26 +20,26 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/mongo', function () {
-    $videoList = Youtube::searchVideos('mongodb');
+    $videoList = Youtube::search('mongodb');
     //print_r(json_decode($videoList));
     $jsonData = json_encode($videoList);
     print_r($jsonData);
 });
 
 Route::get('/express', function () {
-    $videoList = Youtube::searchVideos('expressjs');
+    $videoList = Youtube::search('expressjs');
     $jsonData = json_encode($videoList);
     print_r($jsonData);
 });
 
 Route::get('/react', function () {
-    $videoList = Youtube::searchVideos('reactjs');
+    $videoList = Youtube::search('reactjs');
     $jsonData = json_encode($videoList);
     print_r($jsonData);
 });
 
 Route::get('/node', function () {
-    $videoList = Youtube::searchVideos('nodejs');
+    $videoList = Youtube::search('nodejs');
     $jsonData = json_encode($videoList);
     print_r($jsonData);
 });

@@ -15,10 +15,13 @@ class CreateYoutubesTable extends Migration
     {
         Schema::create('youtubes', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('resultKind');
-            $table->string('etag');
-            $table->string('videoKind');
-            $table->string('videoID');
+            $table->string('channelId');
+            $table->string('title');
+            $table->string('description');
+            $table->string('image-url');
+            $table->string('image-width');
+            $table->string('image-height');
+            $table->string('channelTitle');
             $table->timestamps();
         });
     }
