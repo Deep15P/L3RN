@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Youtube;
 
 class YoutubeController extends Controller
 {
@@ -13,7 +14,8 @@ class YoutubeController extends Controller
      */
     public function index()
     {
-        return ('youtubes.index');
+        $posts = Youtube::all();
+        return view('profile.index')->with('posts', $posts);
     }
 
     /**
