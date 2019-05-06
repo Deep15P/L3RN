@@ -2,6 +2,7 @@
 
 @section('content')
     <h1>Dashboard</h1>
+    <p>{{ WikiRand::getLink() }}</p> 
     @if(count($posts) > 0)
         @foreach($posts as $post)
             <div class="well">

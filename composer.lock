@@ -1,0 +1,73 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "473046f635fd0261d5a3bd72ce09d15c",
+    "packages": [
+        {
+            "name": "unicodeveloper/laravel-wikipedia",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/unicodeveloper/laravel-wikipedia.git",
+                "reference": "6b5c9928203b83ad43c20865111c7006020f4583"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/unicodeveloper/laravel-wikipedia/zipball/6b5c9928203b83ad43c20865111c7006020f4583",
+                "reference": "6b5c9928203b83ad43c20865111c7006020f4583",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Unicodeveloper\\Larapedia\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "unicodeveloper",
+                    "email": "prosperotemuyiwa@gmail.com",
+                    "homepage": "https://twitter.com/unicodeveloper",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Bridge for Wikipedia",
+            "homepage": "https://twitter.com/unicodeveloper",
+            "keywords": [
+                "laravel",
+                "laravel-wikipedia",
+                "php",
+                "unicodeveloper",
+                "wikipedia"
+            ],
+            "time": "2015-11-04T01:01:58+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
