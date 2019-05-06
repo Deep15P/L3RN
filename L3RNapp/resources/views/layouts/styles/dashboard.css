@@ -78,13 +78,13 @@ body {
 
 .loader ul li {
     display: inline-block;
-    color: #022c43;
+    color: #115173;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     margin: 0 8px;
     font-size: 24px;
     text-transform: uppercase;
-    animation: loadNow 3s ease-in-out forwards;
+    animation: loadNow 2.5s ease-in-out forwards;
     opacity: 0;
     transform: translateX(0px);
 }
