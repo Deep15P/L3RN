@@ -190,12 +190,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     top: -100px;
+    right: -300px;
 }
 
-.desc p {
+/* .desc p {
     margin-right: -50px;
     
-}
+} */
 
 button {
     font-family: Arial, Helvetica, sans-serif;
@@ -301,6 +302,7 @@ img {
   .dropdown {
     position: relative;
     display: inline-block;
+    width: 500px;
   }
   
   .dropdown-content {
@@ -311,6 +313,8 @@ img {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    width: 460px;
+    align-content: center;
   }
   
   .dropdown-content a {
@@ -328,4 +332,11 @@ img {
   
   .dropdown:hover .dropbtn {
     background-color: #ffd700;
+  }
+
+  .results {
+      position: relative; 
+      right: -195px;
+      bottom: -40px;
+      font-size: 30px;
   }

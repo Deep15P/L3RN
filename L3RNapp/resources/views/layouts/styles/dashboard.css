@@ -187,9 +187,11 @@ body {
 
 .heading {
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
     font-size: 50px;
-    padding-right: 15px;
+    padding: 20px;
+    position: relative;
+    top: -200px;
+    right: -340px;
 }
 
 .desc {
@@ -279,4 +281,22 @@ img {
     bottom: 0;
     left: 0;
     margin: 2em;
+}
+
+.logout {
+    position: absolute;
+    right: 0;
+    margin: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.search {
+    position: absolute;
+    right: 100px;
+    margin: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
 }
