@@ -21,27 +21,38 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/mongo', function () {
     $videoList = Youtube::search('mongodb');
-    //print_r(json_decode($videoList));
-    $jsonData = json_encode($videoList);
-    print_r($jsonData);
+    for ($x = 0; $x <= 9; $x++) {
+        echo $videoList[$x]->id->videoId;
+        echo $videoList[$x]->snippet->title;
+        echo $videoList[$x]->snippet->description;
+  }
 });
 
 Route::get('/express', function () {
     $videoList = Youtube::search('expressjs');
-    $jsonData = json_encode($videoList);
-    print_r($jsonData);
+    for ($x = 0; $x <= 9; $x++) {
+        echo $videoList[$x]->id->videoId;
+        echo $videoList[$x]->snippet->title;
+        echo $videoList[$x]->snippet->description;
+  }
 });
 
 Route::get('/react', function () {
     $videoList = Youtube::search('reactjs');
-    $jsonData = json_encode($videoList);
-    print_r($jsonData);
+    for ($x = 0; $x <= 9; $x++) {
+        echo $videoList[$x]->id->videoId;
+        echo $videoList[$x]->snippet->title;
+        echo $videoList[$x]->snippet->description;
+  }
 });
 
 Route::get('/node', function () {
     $videoList = Youtube::search('nodejs');
-    $jsonData = json_encode($videoList);
-    print_r($jsonData);
+    for ($x = 0; $x <= 9; $x++) {
+        echo $videoList[$x]->id->videoId;
+        echo $videoList[$x]->snippet->title;
+        echo $videoList[$x]->snippet->description;
+  }
 });
 
 

@@ -1,0 +1,5 @@
+{
+    "require": {
+        "unicodeveloper/laravel-wikipedia": "^1.0"
+    }
+}
