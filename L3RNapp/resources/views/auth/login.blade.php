@@ -1,12 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+html body {
+    background-color: #ffd700;
+}
+</style>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
-
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
@@ -56,7 +61,6 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
                                 </button>
-
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
@@ -70,4 +74,20 @@
         </div>
     </div>
 </div>
+<!-- javascript for gsap code -->
+<script> type="text/javascript">
+
+        // // logo animation
+        TweenMax.from(".container", 1.6, {
+            // it takes two seconds for it to load in
+            delay: 0.2,
+            // opacity is zero
+            opacity: 0,
+            // the animation will be moving on the y axis 
+            y: 30,
+            // the content will ease in and out
+            ease: Expo.easeInOut
+        });
+
+    </script>
 @endsection
