@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Youtube;
 
@@ -23,9 +22,16 @@ class YoutubeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+
+        
+        // $posts = new Posts;
+        // $posts title = $request->input('title');
+        // $posts description = $request->input('description');
+        // $posts videoId = $request->input('videoId');
+        // $posts -> save();
+
     }
 
     /**
