@@ -1,10 +1,6 @@
 
 @extends('layouts.app')
 
-@section('content')
-
-@endsection
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <link rel="stylesheet" href="/styles/dashboard.css">
 </head>
@@ -373,6 +368,7 @@ img {
         <div class="link">
             <!-- search button that redirects to the search page -->
             <!-- <button type="button"><a href="search.html">Search For Activity</a></button> -->
+
         </div>
     </div>
     <!-- user photo -->

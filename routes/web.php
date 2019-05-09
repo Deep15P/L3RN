@@ -59,3 +59,9 @@ Route::get('/node', function () {
 
 
 Route::resource('profile', 'YoutubeController');
+
+// Route::apiResources([
+//     'home' => 'HomeController',
+//     'home' => 'YoutubeController',
+//     'profile' => 'YoutubeController'
+// ]);
