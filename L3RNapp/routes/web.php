@@ -20,11 +20,12 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/mongo', function () {
-    $videoList = Youtube::search('mongodb');
+    $videoList = Youtube::search('reactjs');
     for ($x = 0; $x <= 9; $x++) {
-        echo $videoList[$x]->id->videoId;
-        echo $videoList[$x]->snippet->title;
-        echo $videoList[$x]->snippet->description;
+        return $videoList;
+        //echo $videoList[$x]->snippet->title;
+        //echo $videoList[$x]->snippet->description;
+        //echo $videoList[$x]->id->videoID;
   }
 });
 
@@ -33,7 +34,7 @@ Route::get('/express', function () {
     for ($x = 0; $x <= 9; $x++) {
         echo $videoList[$x]->id->videoId;
         echo $videoList[$x]->snippet->title;
-        echo $videoList[$x]->snippet->description;
+        //echo $videoList[$x]->snippet->description;
   }
 });
 
@@ -42,16 +43,17 @@ Route::get('/react', function () {
     for ($x = 0; $x <= 9; $x++) {
         echo $videoList[$x]->id->videoId;
         echo $videoList[$x]->snippet->title;
-        echo $videoList[$x]->snippet->description;
+        //echo $videoList[$x]->snippet->description;
   }
 });
 
 Route::get('/node', function () {
     $videoList = Youtube::search('nodejs');
     for ($x = 0; $x <= 9; $x++) {
-        echo $videoList[$x]->id->videoId;
-        echo $videoList[$x]->snippet->title;
-        echo $videoList[$x]->snippet->description;
+        return $videoList;
+        // return $videoList[$x]->id->videoId;
+        // return $videoList[$x]->snippet->title;
+        // return $videoList[$x]->snippet->description;
   }
 });
 
