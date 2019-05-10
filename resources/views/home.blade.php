@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <link rel="stylesheet" href="/styles/dashboard.css">
 </head>
 <style>
@@ -319,7 +319,9 @@ img {
 }
     </style>
 <body>
-    <!-- creating the search transition -->
+
+
+    <!-- creating the dashboard transition -->
     <div class="temp"></div>
     <div class="first-block"></div>
     <div class="second-block"></div>

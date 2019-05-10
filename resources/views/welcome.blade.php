@@ -11,6 +11,9 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
+        <!-- baffel -->
+        <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+
         <!-- Styles -->
         <style>
             html, body {
@@ -63,6 +66,9 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+        
+
         </style>
     </head>
     <body>
@@ -70,12 +76,12 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Login</a>
+                        <a href="{{ url('/home') }}" class="login">Login</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('login') }}" class="login2">Login</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <a href="{{ route('register') }}" class="register">Register</a>
                         @endif
                     @endauth
                 </div>
@@ -85,6 +91,9 @@
                 <div class="title m-b-md">
                     L3RN
                 </div>
+
+            
+                <div class="ellipse ellipse__outer--thick"></div>
 
                 <div class="links">
                     <!-- <a href="https://laravel.com/docs">Docs</a>
@@ -97,6 +106,21 @@
                 </div>
             </div>
         </div>
+
+<script type="text/javascript">
+
+const text = baffle(".title");
+text.set({
+      characters : '█▓█ ▒░/▒░ █░▒▓/ █▒▒ ▓▒▓/█ ░█▒/ ▒▓░ █<░▒ ▓/░>',
+      speed: 120
+});
+text.start();
+text.reveal(4000);
+
+
+
+</script>
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
