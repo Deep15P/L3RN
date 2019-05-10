@@ -97,7 +97,7 @@
         // // logo animation
         TweenMax.from(".navbar", 1.6, {
             // it takes two seconds for it to load in
-            delay: 4.5,
+            delay: 6.5,
             // opacity is zero
             opacity: 0,
             // the animation will be moving on the y axis 

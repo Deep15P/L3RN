@@ -204,7 +204,7 @@ body {
     font-size: 50px;
     padding: 20px;
     position: relative;
-    top: -80px;
+    top: -250px;
     right: -310px;
 }
 
@@ -244,7 +244,7 @@ a {
     position: fixed;
     z-index: 0;
     top: 46%;
-    right: 14%;
+    right: 70%;
     transform: translateY(-50%);
 }
 
@@ -317,6 +317,307 @@ img {
     font-weight: bolder;
     font-size: 18px;
 }
+
+
+
+
+/* css for the page after the transition is done */
+
+
+
+
+
+.left-col, .right-col {
+      position: absolute;
+      left: -0px;
+      top: -0px;
+      width: 50%;
+      height: 100%;
+      /* opacity: 0.8; */
+}
+
+.left-col {
+      background: #022c43;
+}
+
+.right-col {
+      left: 50%;
+}
+
+.upper {
+      position: absolute;
+      width: 100%;
+      height: 50vh;
+      background: #ffd700;
+      opacity: 0;
+      animation: appear-text 0.0001s linear forwards;
+      animation-delay: 7.5s;
+}
+
+.bottom {
+      position: absolute;
+      top: 50%;
+      height: 50vh;
+      width: 100%;
+      background: url(next-cover.jpg) no-repeat 50% 50%;
+      background-size: cover;
+      opacity: 0;
+      animation: appear-text 0.0001s linear forwards;
+      animation-delay: 4.2s;
+}
+
+@media(max-width: 900px) {
+      .left-col {
+            width: 100%;
+      }
+      .right-col {
+            top: 100%;
+            left: 0%;
+            width: 100%;
+      }
+
+}
+
+.logo {
+      font-family: 'Nunito', sans-serif;
+      color: #fff;
+      position: fixed;
+      margin: 1.4em;
+      font-weight: bolder;
+      z-index: 1;
+}
+
+.year {
+      position: absolute;
+      color: #000;
+      font-family: 'Nunito', sans-serif;
+      bottom: 8%;
+      font-weight: bolder;
+      transform: rotate(-90deg);
+      left: 0%;
+}
+
+.buy {
+      color: #f4c8ad;
+      text-transform: uppercase;
+      font-family: 'Nunito', sans-serif;
+      text-decoration: underline;
+      position: absolute;
+      right: 0%;
+      top: -2.6%;
+      margin: 1.4em;
+}
+
+.cover {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 45%;
+      height: 50%;
+      background: url(album-art.jpg) no-repeat 50% 50%;
+      background-size: cover;
+      opacity: 0;
+      animation: appear-text 0.0001s linear forwards;
+      animation-delay: 2.6s;
+
+}
+
+.data {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-family: 'Nunito', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 25px;
+}
+
+#name {
+      font-weight: bolder;
+}
+
+#artist {
+      font-size: 10px;
+}
+
+.play, .next ion-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      opacity: 0.6;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 2em;
+}
+
+.about {
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+}
+
+.about h1 {
+      font-weight: bolder;
+      color: #000;
+      font-family: 'Nunito', sans-serif;
+      text-transform: uppercase;
+}
+
+.about p {
+      color: #000;
+      font-family: 'Nunito', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 10px;
+      cursor: pointer;
+}
+
+.about span:hover {
+      text-decoration: underline;
+}
+
+.media {
+      margin-top: 40px;
+}
+
+.media p {
+      color: #6f6457;
+      margin-bottom: 0;
+}
+
+.media ul {
+      position: absolute;
+      list-style: none;
+      left: -24%;
+}
+
+.media ul li {
+      display: inline-block;
+      color: #bcac98;
+      padding-right: 10px;
+}
+
+.next {
+      position: absolute;
+      top: 24%;
+      left: 16%;
+}
+
+.data2 {
+      position: absolute;
+      top: 10%;
+      left: 24%;
+      color: #000;
+      font-family: 'Nunito', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+}
+
+.more {
+      position: absolute;
+      top: 80%;
+      left: 10%;
+      font-size: 15px;
+      color: #000;
+      text-transform: uppercase;
+      font-family: 'Nunito', sans-serif;
+      text-decoration: underline;
+}
+
+.block-cover {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 45%;
+      height: 50%;
+}
+
+.block-cover::after {
+     content: '';
+     top: 0;
+     left: 0;
+     position: absolute;
+     width: 0%;
+     height: 100%;
+     background: #4f4538;
+     animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+     animation-delay: 2s;
+}
+
+@keyframes rev-block {
+
+     0% {
+          left: 0;
+          width: 0%;
+     }
+     50% {
+          left: 0;
+          width: 100%;
+     }
+     100% {
+          left: 100%;
+          width: 0%;
+     }
+
+}
+
+@keyframes appear-text {
+
+     0% {
+          opacity: 0;
+     }
+     100% {
+          opacity: 1;
+     }
+
+}
+
+.upper-block {
+      position: absolute;
+      width: 100%;
+      height: 50vh;
+}
+
+.upper-block::after {
+     content: '';
+     top: 0;
+     left: 0;
+     position: absolute;
+     width: 0%;
+     height: 100%;
+     background: #115173;
+     animation: rev-block 5.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+     animation-delay: 5.4s;
+}
+
+.block-bottom {
+      position: absolute;
+      top: 50%;
+      height: 50vh;
+      width: 100%;
+}
+
+.block-bottom::after {
+     content: '';
+     top: 0;
+     left: 0;
+     position: absolute;
+     width: 0%;
+     height: 100%;
+     background: #000;
+     animation: rev-block 3.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+     animation-delay: 5.8s;
+}
+
+
+
     </style>
 <body>
 
@@ -338,44 +639,119 @@ img {
             <li>D</li>
         </ul>
     </div>
-    <!-- nav bar -->
-    <nav class="nav">
-        <span class="logout"></span>
-        <span class="search"></span>
 
-        <!-- creating the logo -->
-        <div class="logo">
-            <span></span>
-        </div>
-    </nav>
+    <!-- the actual page after the transition is finished -->
+    <div class="container">
+
+            <div class="left-col">
+
+                  <!-- <div class="logo">ALTRNTV</div>
+
+                  <div class="year">EST 1994</div> -->
+
+                  <!-- <div class="cover">
+                        <div class="play">
+                              <ion-icon name="play"></ion-icon>
+                        </div>
+                  </div> -->
+
+                  <div class="data">
+
+                        <div class="album-name">
+                        <p id="name">Courses</p>
+                        </div>
+
+                        <div class="album-artist">
+                        <p id="artist">MongoDB</p>
+                        <p id="artist">Express</p>
+                        <p id="artist">React.js</p>
+                        <p id="artist">Node.js</p>
+                        
+                        <!-- <p id="artist">Node.js</p> -->
+
+                        
+                        </div>
+                  </div>
+
+                  <div class="block-cover"></div>
+
+                  <!-- <div class="buy">
+                        <p id="more">Buy now</p>
+                  </div> -->
+
+            </div>
+
+            <div class="right-col">
+
+                  <div class="upper">
+
+                        <div class="about">
+
+                              <h1>Aurthur Jones</h1>
+                              <div class="album-name2">
+                              <p><ion-icon name="radio"></ion-icon> &nbsp;<span>Skill Level: intermediate</span></p>
+                              </div>
+
+                              <div class="album-artist2">
+                              <p><ion-icon name="person"></ion-icon>  &nbsp;<span>Current Stack: M.E.R.N </span></p>
+                              </div>
+
+                              <div class="album-genre2">
+                              <p><ion-icon name="musical-notes"></ion-icon>  &nbsp;<span>Current Technology: Node.js</span></p>
+                              </div>
+
+                              <!-- <div class="media">
+
+                                    <p>Share now : </p>
+
+                                    <ul>
+                                          <li><ion-icon name="logo-facebook"></ion-icon></li>
+                                          <li><ion-icon name="logo-instagram"></ion-icon></li>
+                                          <li><ion-icon name="logo-twitter"></ion-icon></li>
+                                          <li><ion-icon name="logo-whatsapp"></ion-icon></li>
+                                    </ul>
+
+                              </div> -->
+
+                        </div>
+
+                  </div>
+                  <div class="upper-block"></div>
+
+                  <div class="bottom">
+                        <div class="next">
+                              <ion-icon name="fastforward"></ion-icon>
+                        </div>
+
+                        <div class="data2">
+
+                              <div class="album-name3">
+                              <p id="name">Saved Content</p>
+                              </div>
+
+                              <div class="album-artist3">
+                              <!-- <p id="artist">Vhyce alven</p> -->
+                              <iframe width="400" height="200" src="https://www.youtube.com/embed/DLX62G4lc44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br>
+                                <ul>
+                                    <li><a href="https://medium.com/javascript-scene/introduction-to-node-express-90c431f9e6fd">Introduction to Node & Express</a></li>
+                                    <li><a href="https://medium.freecodecamp.org/all-the-fundamental-react-js-concepts-jammed-into-this-single-medium-article-c83f9b53eac2">All the fundamental React.js concepts, jammed into this single Medium article</a></li>
+                              </ul>
+                              </div>
+
+                        </div>
 
 
-    <div class="content">
-        <!-- heading/username -->
-        <div class="heading">
-            <span>ARTHUR JONES</span>
+                        <!-- <div class="more">
+                              <p id="more">More like this</p>
+                        </div> -->
 
-            <p class="name">
-                react.js 
-                mongoDB
-                node.js
-                express
-            </p>
-        </div>
-        <!-- status/description  -->
-        <div class="desc">
-            <p>Your Saved info</p>
-        </div>
-        <div class="link">
-            <!-- search button that redirects to the search page -->
-            <!-- <button type="button"><a href="search.html">Search For Activity</a></button> -->
+                  </div>
+                  <div class="block-bottom"></div>
 
-        </div>
-    </div>
-    <!-- user photo -->
-    <div class="img">
-        <!-- <img src="assets/images/jon.jpg" alt=""> -->
-    </div>
+            </div>
+
+      </div>
 
     <script type="text/javascript">
         // // logo animation
@@ -459,6 +835,126 @@ img {
             y: 40,
             ease: Expo.easeInOut
         }, 0.2);
+
+
+
+        // animations after the transition is over. 
+        // there is a longer delay so that the animations can come into play without messing up the transition.
+
+
+
+
+        TweenMax.from(".left-col", 2, {
+            delay: 4.8,
+            width: "0%",
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".logo", 2, {
+            delay: 6.5,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".buy", 2, {
+            delay: 6.8,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".year", 2, {
+            delay: 6.1,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".album-name", 2, {
+            delay: 6.4,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".album-artist", 2, {
+            delay: 6.6,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".about h1", 2, {
+            delay: 6,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".album-name2", 2, {
+            delay: 6.2,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".album-artist2", 2, {
+            delay: 6.4,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".album-genre2", 2, {
+            delay: 6.6,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".media p", 2, {
+            delay: 6.6,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.staggerFrom(".media ul li", 2, {
+            delay: 6.8,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+      }, 0.1);
+
+
+      TweenMax.from(".album-name3", 2, {
+            delay: 6,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".album-artist3", 2, {
+            delay: 6.2,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".next", 2, {
+            delay: 6.4,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".more", 2, {
+            delay: 6.6,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
 
     </script>
 </body>
